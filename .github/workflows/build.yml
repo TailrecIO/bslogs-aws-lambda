@@ -24,7 +24,7 @@ jobs:
       - name: Check ZIP existence
         uses: andstor/file-existence-action@v2
         with:
-          files: build/logtail-aws-lambda.zip
+          files: build/bslogs-aws-lambda.zip
 
       - name: Check for uncommitted changes after build (eg. package-lock.json)
         run: '[[ -z "$(git status --porcelain)" ]] || (git status; exit 1)'

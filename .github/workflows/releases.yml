@@ -38,4 +38,4 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: "v${{ steps.tagger.outputs.new-tag }}"
-          artifacts: build/logtail-aws-lambda.zip
+          artifacts: build/bslogs-aws-lambda.zip

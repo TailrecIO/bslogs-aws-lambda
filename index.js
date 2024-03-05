@@ -9,10 +9,12 @@ const options = {}
 if (process.env.BETTER_STACK_ENTRYPOINT) {
   options.endpoint = process.env.BETTER_STACK_ENTRYPOINT
 }
+
 const logger = new Logtail(process.env.BETTER_STACK_SOURCE_TOKEN, options)
 
 // Main entrypoint for Lambda
 export async function handler(event, context) {
+
   const records = await parseRecords(event, context)
 
   return await Promise.all(records.map(record => logger.log(record.message, record.level, record.data)))
