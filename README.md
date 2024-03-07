@@ -101,7 +101,7 @@ for your log library [here] respecting these variables.
 | LOG_CLOUDWATCH_FIELDS     | Specify which CloudWatch information you want to include in the log context. Available options include `owner`, `logGroup`, and `logStream`. The default value is `logGroup`.                                                                                                                                                                                      |
 
 ## Configuration Guides
-This lambda should work with: Go ZAP/Zerolog/slog, Java SLF4J/Logback/Log4j,
+
 **Go** 
 - [Zerolog](docs/ZEROLOG.md)
 
