@@ -2,7 +2,7 @@
 
 BUILD_DIR="$(dirname "$0")"
 ROOT_DIR="$(dirname "$BUILD_DIR")"
-ARCHIVE_NAME="logtail-aws-lambda.zip"
+ARCHIVE_NAME="bslogs-aws-lambda.zip"
 
 echo "Installing dependencies..."
 (cd "$ROOT_DIR" && npm install)

@@ -1,9 +1,9 @@
 {
-  "name": "logtail-aws-lambda",
+  "name": "bslogs-aws-lambda",
   "type": "module",
   "main": "index.js",
   "version": "0.1.0",
-  "description": "AWS Lambda for forwarding CloudWatch logs to Better Stack",
+  "description": "AWS Lambda for managing structured logs in CloudWatch and forwarding to Better Stack",
   "keywords": [
     "aws",
     "lambda",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/logtail/logtail-aws-lambda"
+    "url": "https://github.com/tailrecIO/bslogs-aws-lambda"
   },
   "dependencies": {
     "@logtail/node": "^0.4.6"
